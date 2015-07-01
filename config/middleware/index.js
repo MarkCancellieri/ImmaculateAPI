@@ -8,6 +8,6 @@ module.exports = {
   logger         : require('morgan'),
   methodOverride : require('method-override'),
   session        : require('express-session'),
-  _404           : require('../../lib/middleware/lib.middleware.404'),
-  errorHandler   : require('../../lib/middleware/lib.middleware.error-handler')
+  _404           : require('../../lib/middleware/404.js'),
+  errorHandler   : require('../../lib/middleware/error-handler.js')
 };

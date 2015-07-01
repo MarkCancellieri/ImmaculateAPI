@@ -50,4 +50,4 @@ process.on('SIGTERM', function() {
 });
 
 // Load models
-require('../../app_api/models/api.models.index.js');
+require('../../app_api/models');

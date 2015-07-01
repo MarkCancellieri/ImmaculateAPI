@@ -3,7 +3,7 @@
 // Module dependencies
 var express    = require('express');
 var config     = require('../config');
-var middleware = require('../middleware/config.middleware');
+var middleware = require('../middleware');
 
 // Define the Express configuration function
 function configureExpressApp() {
@@ -28,7 +28,7 @@ function configureExpressApp() {
   app.use(middleware.flash());
 
   // Load routes
-  app.use('/', require('../../app_api/routes/api.routes.index.js'));
+  app.use('/', require('../../app_api/routes'));
 
   // 404 handler
   app.use(middleware._404);

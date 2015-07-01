@@ -17,5 +17,5 @@ var boardSchema = new mongoose.Schema({
 // Add paginate plugin
 boardSchema.plugin(mongoosePaginate);
 
-// Note: Required by api.models.index.js
+// Note: Required by index.js
 mongoose.model('Board', boardSchema);

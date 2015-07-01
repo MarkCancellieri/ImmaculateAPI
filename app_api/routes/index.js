@@ -3,9 +3,9 @@
 // Module dependencies
 var express          = require('express');
 var router           = express.Router();
-var boardsController = require('../controllers/api.controllers.boards');
-var postsController  = require('../controllers/api.controllers.posts');
-var usersController  = require('../controllers/api.controllers.users');
+var boardsController = require('../controllers/boards');
+var postsController  = require('../controllers/posts');
+var usersController  = require('../controllers/users');
 
 // Board API routes
 router.get('/api/boards', boardsController.getListOfBoards);

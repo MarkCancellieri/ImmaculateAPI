@@ -36,5 +36,5 @@ var postSchema = new mongoose.Schema({
 // Add paginate plugin
 postSchema.plugin(mongoosePaginate);
 
-// Note: Required by api.models.index.js
+// Note: Required by index.js
 mongoose.model('Post', postSchema);

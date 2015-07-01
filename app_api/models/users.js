@@ -107,5 +107,5 @@ userSchema.set('toJSON', {
 // Add paginate plugin
 userSchema.plugin(mongoosePaginate);
 
-// Note: Required by api.models.index.js
+// Note: Required by index.js
 mongoose.model('User', userSchema);
