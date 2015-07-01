@@ -1,0 +1,35 @@
+<div class="row">
+  <div class="col-xs-12">
+    <div class="row">
+    <div class="list-group">
+      <div class="col-xs-12 list-group-item hidden-xs">
+        <h4>
+          <b>
+            <div class="col-sm-4">Board Name</div>
+            <div class="col-sm-1 text-center">Unread</div>
+            <div class="col-sm-3 text-center"><a href="#">Mark All Read</a></div>
+            <div class="col-sm-3 text-center">Last Activity</div>
+            <div class="col-sm-1 text-center">Posts</div>
+          </b>
+        </h4>
+        <div class="visible-xs-block"><a href="#">Mark All Read</a></div>
+      </div>
+      {{#each boards}}
+        <div class="col-xs-12 list-group-item">
+          <h4>
+            <span class="col-xs-12 col-sm-4"><a href="/boards/{{_id}}/{{name}}">{{name}}</a></span>
+            <span class="col-xs-3 visible-xs-inline"><B>Unread:</B></span>
+            <span class="col-xs-3 col-sm-1 text-center">154</span>
+            <span class="col-xs-6 col-sm-3 text-center"><a href="#">Mark Read</a></span>
+            <span class="col-sm-3 hidden-xs text-center">April 14, 2015 4:08PM</span>
+            <span class="col-sm-1 hidden-xs text-center">14,598</span>
+          </h4>
+        </div>
+      {{/each}}
+    </div>
+    </div>
+  </div>
+</div>
+
+{{!-- Pagination --}}
+{{> server.views.partials.pagination }}

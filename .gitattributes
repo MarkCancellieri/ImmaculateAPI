@@ -1,0 +1,9 @@
+# Auto detect text files and perform LF normalization
+* text  eol=lf
+
+# Files that should not be modified.
+*.otf   binary
+*.eot   binary
+*.ttf   binary
+*.woff  binary
+*.jpg   binary

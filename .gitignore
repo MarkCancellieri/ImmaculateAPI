@@ -1,0 +1,13 @@
+# Ignore WebStorm settings
+.idea
+
+# Ignore npm packages
+node_modules
+
+# Ignore thumbs.db file that is created by Windows Explorer
+Thumbs.db
+
+# Ignore Bower packages
+app_client/lib/bootstrap
+app_client/lib/fontawesome
+app_client/lib/jquery
